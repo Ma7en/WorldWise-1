@@ -1,0 +1,172 @@
+{
+    "cities": [
+        {
+            "cityName": "Clairvaux-d'Aveyron",
+            "country": "France",
+            "emoji": "🇫🇷",
+            "date": "2024-01-17T18:01:05.078Z",
+            "notes": "dd",
+            "position": {
+                "lat": "44.43202965550295",
+                "lng": "2.413165811028728"
+            },
+            "id": 1
+        },
+        {
+            "cityName": "May-en-Multien",
+            "country": "France",
+            "emoji": "🇫🇷",
+            "date": "2024-01-17T18:04:40.653Z",
+            "notes": "",
+            "position": {
+                "lat": "49.07990123682033",
+                "lng": "3.0289401041811153"
+            },
+            "id": 3
+        },
+        {
+            "cityName": "Alcaniz",
+            "country": "Spain",
+            "emoji": "🇪🇸",
+            "date": "2024-01-17T19:38:34.071Z",
+            "notes": "",
+            "position": {
+                "lat": "41.03098547781416",
+                "lng": "-0.21972656250000003"
+            },
+            "id": 4
+        },
+        {
+            "cityName": "Al Fayyum",
+            "country": "Egypt",
+            "emoji": "🇪🇬",
+            "date": "2024-01-17T19:39:00.535Z",
+            "notes": "",
+            "position": {
+                "lat": "29.57372874138895",
+                "lng": "30.959472656250004"
+            },
+            "id": 5
+        },
+        {
+            "cityName": "Charef",
+            "country": "Algeria",
+            "emoji": "🇩🇿",
+            "date": "2024-01-18T16:24:52.815Z",
+            "notes": "",
+            "position": {
+                "lat": "34.63852809119746",
+                "lng": "2.7967178287170795"
+            },
+            "id": 6
+        },
+        {
+            "cityName": "Hun",
+            "country": "Libya",
+            "emoji": "🇱🇾",
+            "date": "2024-01-18T16:24:57.773Z",
+            "notes": "",
+            "position": {
+                "lat": "26.514106076302838",
+                "lng": "18.18031999959866"
+            },
+            "id": 7
+        },
+        {
+            "cityName": "Giza",
+            "country": "Egypt",
+            "emoji": "🇪🇬",
+            "date": "2024-01-18T16:25:00.198Z",
+            "notes": "",
+            "position": {
+                "lat": "28.11414468273678",
+                "lng": "28.729428823048593"
+            },
+            "id": 8
+        },
+        {
+            "cityName": "Haya",
+            "country": "Sudan (the)",
+            "emoji": "🇸🇩",
+            "date": "2024-01-18T16:25:02.901Z",
+            "notes": "",
+            "position": {
+                "lat": "18.77821511216335",
+                "lng": "35.75841672335244"
+            },
+            "id": 9
+        },
+        {
+            "cityName": "As Sulayyil",
+            "country": "Saudi Arabia",
+            "emoji": "🇸🇦",
+            "date": "2024-01-18T16:25:05.261Z",
+            "notes": "",
+            "position": {
+                "lat": "20.01840167066591",
+                "lng": "45.99973870182519"
+            },
+            "id": 10
+        },
+        {
+            "cityName": "Abu Dhabi",
+            "country": "United Arab Emirates (the)",
+            "emoji": "🇦🇪",
+            "date": "2024-01-18T16:25:13.838Z",
+            "notes": "",
+            "position": {
+                "lat": "24.32977801323776",
+                "lng": "54.5680001419695"
+            },
+            "id": 11
+        },
+        {
+            "cityName": "Etc/GMT",
+            "country": "Antarctica",
+            "emoji": "🇦🇶",
+            "date": "2024-01-18T17:04:13.649Z",
+            "notes": "",
+            "position": {
+                "lat": "-61.09226195058719",
+                "lng": "6.00831683205954"
+            },
+            "id": 13
+        },
+        {
+            "cityName": "Maracaju",
+            "country": "Brazil",
+            "emoji": "🇧🇷",
+            "date": "2024-01-20T10:35:11.997Z",
+            "notes": "",
+            "position": {
+                "lat": "-21.249534838142775",
+                "lng": "-55.50282942872295"
+            },
+            "id": 14
+        },
+        {
+            "cityName": "Ganjuwa",
+            "country": "Nigeria",
+            "emoji": "🇳🇬",
+            "date": "2024-01-20T10:43:44.995Z",
+            "notes": "",
+            "position": {
+                "lat": "10.730510352435077",
+                "lng": "10.398057721351394"
+            },
+            "id": 15
+        },
+        {
+            "cityName": "Pulpi",
+            "country": "Spain",
+            "emoji": "🇪🇸",
+            "date": "2024-01-20T10:49:38.755Z",
+            "notes": "",
+            "position": {
+                "lat": "37.42794889360993",
+                "lng": "-1.735588897459992"
+            },
+            "id": 16
+        }
+    ]
+}

@@ -1,0 +1,157 @@
+Create RLS : Enable delete access for users based on their user Id
+To enable delete access for users based on their user Id, you can create a policy using the using clause. Here's an example of how to do this:
+
+-- 1. Create table
+create table profiles (
+  id uuid primary key,
+  user_id references auth.users,
+  avatar_url text
+);
+
+-- 2. Enable RLS
+alter table profiles enable row level security;
+
+-- 3. Create Policy
+create policy "Users can delete a profile."
+on profiles for delete
+to authenticated                     -- the Postgres Role (recommended)
+using ( auth.uid() = user_id );      -- the actual Policy
+
+In this example, we create a table called profiles with columns id, user_id, and avatar_url. We then enable RLS on the profiles table using the alter table command. Finally, we create a policy called "Users can delete a profile" that allows authenticated users to delete a profile only if the user_id column matches their auth.uid(). This ensures that users can only delete their own profiles and not those of other users.
+
+
+===============================
+
+
+
+
+Create RLS : Enable all actions access for users based on their user Id
+To enable all actions access for users based on their user Id, you can create a policy using the using clause. Here's an example of how to do this:
+
+-- 1. Create table
+create table profiles (
+  id uuid primary key,
+  user_id references auth.users,
+  avatar_url text
+);
+
+-- 2. Enable RLS
+alter table profiles enable row level security;
+
+-- 3. Create Policy
+create policy "Users can access their own profile."
+on profiles for all
+to authenticated                     -- the Postgres Role (recommended)
+using ( auth.uid() = user_id );      -- the actual Policy
+
+In this example, we create a table called profiles with columns id, user_id, and avatar_url. We then enable RLS on the profiles table using the alter table command. Finally, we create a policy called "Users can access their own profile" that allows authenticated users to perform all actions on a profile only if the user_id column matches their auth.uid(). This ensures that users can only access their own profiles and not those of other users.
+
+
+
+
+
+===================================
+
+my
+
+Create RLS : Enable all actions access for users based on their user Id
+To enable all actions access for users based on their user Id, you can create a policy using the using clause. Here's an example of how to do this:
+
+-- 1. Create table
+create table citiess (
+  id uuid primary key,
+  user_id references auth.users,
+  avatar_url text
+);
+
+-- 2. Enable RLS
+alter table citiess enable row level security;
+
+-- 3. Create Policy
+create policy "Users can access their own profile."
+on citiess for all
+to authenticated                     -- the Postgres Role (recommended)
+using ( auth.uid() = user_id );      -- the actual Policy
+
+In this example, we create a table called profiles with columns id, user_id, and avatar_url. We then enable RLS on the profiles table using the alter table command. Finally, we create a policy called "Users can access their own profile" that allows authenticated users to perform all actions on a profile only if the user_id column matches their auth.uid(). This ensures that users can only access their own profiles and not those of other users.
+
+
+
+===================================
+
+Create RLS : Enable all actions access for users based on their user Id
+To enable RLS on a table, you can use the following SQL command:
+
+ALTER TABLE table_name ENABLE ROW LEVEL SECURITY;
+
+Once you have enabled RLS, you can create policies that allow or disallow users to access and update data. To create a policy that enables all actions access for users based on their user ID, you can use the following SQL command:
+
+CREATE POLICY policy_name ON table_name FOR ALL TO PUBLIC USING (user_id = auth.uid());
+
+This policy will allow any user to perform all actions (SELECT, INSERT, UPDATE, DELETE) on the table as long as the user_id column matches their auth.uid(). Note that auth.uid() is a function that returns the ID of the currently authenticated user.
+
+Keep in mind that this policy will only work if you have enabled RLS on the table using the ENABLE ROW LEVEL SECURITY command.
+
+===================================
+
+fin هنا 
+
+-- Supabase AI is experimental and may produce incorrect answers
+-- Always verify the output before executing
+
+-- 1. Create table
+create table
+  citiess (
+    id uuid,
+    user_id uuid references auth.users,
+    avatar_url text
+  );
+
+-- 2. Enable RLS
+alter table cities enable row level security;
+
+-- 3. Create Policy
+create policy "Users can access their own profile." on cities for all to authenticated -- the Postgres Role (recommended)
+using (auth.uid () = user_id);
+
+-- the actual Policy
+
+
+
+===================================
+
+
+create policy " for owners" on
+update
+  using (auth = user_id);
+In, we're creating called "Allow update" on the ` table policy allows users to inposts` table only `()` matches the `` column of the're trying to update means can only update their, and not posts created by otherOnce you've created, only be able to inposts` table if the in the policy. user update that they don't have permission to the fail.
+
+Note that just an example, can policy to fit your case. You can policies for other access as`, `insert`, and `delete`.
+
+
+
+
+===================================
+
+
+create policy "Allow update for owners2" on cities for update to authenticated -- the Postgres Role (recommended)
+using (auth.uid () = user_id);
+
+
+
+===================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
